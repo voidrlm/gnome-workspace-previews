@@ -4,6 +4,8 @@ A restyled version of GNOME's Workspace Indicator extension that shows workspace
 
 ![Workspace previews in the top bar](screenshots/panel.png)
 
+![Settings: previews or workspace names, dynamic or fixed workspaces](screenshots/settings.png)
+
 If the stock Workspace Indicator is installed system-wide, this copy in your home folder takes priority.
 
 Requires GNOME Shell 50.
