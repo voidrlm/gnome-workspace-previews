@@ -15,7 +15,9 @@ export default class WorkspaceIndicatorExtension extends Extension {
         this._indicator = new WorkspaceIndicator({
             extension: this,
         });
-        Main.panel.addToStatusArea('workspace-indicator', this._indicator);
+        // Left side, right after Activities.
+        Main.panel.addToStatusArea('workspace-indicator', this._indicator,
+            Main.panel._leftBox.get_n_children(), 'left');
     }
 
     disable() {
