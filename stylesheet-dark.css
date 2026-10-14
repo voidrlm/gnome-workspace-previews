@@ -1,0 +1,138 @@
+/*
+ * SPDX-FileCopyrightText: 2011 Erick Pérez Castellanos <erick.red@gmail.com>
+ * SPDX-FileCopyrightText: 2019 Florian Müllner <fmuellner@gnome.org>
+ *
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
+.workspace-indicator.previews:active {
+  background-color: none !important;
+  box-shadow: none !important;
+}
+
+.workspace-indicator.name-label {
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.17) !important;
+}
+.workspace-indicator.name-label:hover,
+.workspace-indicator.name-label:focus {
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.28) !important;
+}
+.workspace-indicator.name-label:active {
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.32) !important;
+}
+.workspace-indicator.name-label:active:hover {
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.36) !important;
+}
+
+.workspace-indicator .status-label {
+  width: 8em;
+  padding: 0 8px;
+}
+.workspace-indicator .status-label:ltr { padding-right: 4px; }
+.workspace-indicator .status-label:rtl { padding-left: 4px; }
+
+.workspace-indicator .system-status-icon {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.workspace-indicator .workspaces-view.hfade {
+  -st-hfade-offset: 20px;
+}
+
+.workspace-indicator .workspaces-box {
+  spacing: 3px;
+}
+
+.workspace-indicator .workspace-box {
+  padding: 0;
+}
+
+.workspace-indicator StButton:first-child:ltr > .workspace-box,
+.workspace-indicator StButton:last-child:rtl > .workspace-box {
+  padding-left: 0;
+}
+.workspace-indicator StButton:last-child:ltr > .workspace-box,
+.workspace-indicator StButton:first-child:rtl > .workspace-box {
+  padding-right: 0;
+}
+
+/* Same pill as Now Playing: 22px tall (size set in code), 7px corners,
+   translucent white fill. Windows are live miniatures, inset by the padding
+   so they stay inside the rounded corners. */
+.workspace-indicator .workspace {
+  border-radius: 7px;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.workspace-indicator .workspace.active {
+  background-color: rgba(255, 255, 255, 0.32);
+}
+
+.workspace-indicator .workspace.drop-target {
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.85);
+}
+
+.workspace-indicator-window-preview {
+  background-color: transparent;
+  border: none;
+}
+
+.workspace-indicator-menu {
+  min-width: 17em;
+}
+
+.workspace-indicator-menu .editable-menu-item.popup-menu-item {
+  padding: 3px 12px;
+}
+
+.workspace-indicator-menu .editable-menu-item .icon-button {
+  padding: 6px;
+}
+
+.workspace-indicator-menu .editable-menu-item .icon-button.flat {
+  background-color: transparent;
+}
+
+.workspace-indicator-menu .editable-menu-item .icon-button.flat:hover {
+  background-color: st-transparentize(white, 90%);
+}
+
+.workspace-indicator-menu .editable-menu-item .icon-button.flat:active {
+  background-color: st-transparentize(white, 85%);
+}
+
+.workspace-indicator-menu .editable-menu-item .icon-button.flat:checked {
+  color: -st-accent-fg-color;
+  background-color: -st-accent-color;
+}
+
+.workspace-indicator-menu .editable-menu-item .icon-button.flat:checked:hover {
+  background-color: st-lighten(-st-accent-color, 10%);
+}
+
+.workspace-indicator-menu .editable-menu-item .icon-button.flat:checked:active {
+  background-color: st-lighten(-st-accent-color, 15%);
+}
+
+.workspace-indicator-menu .editable-menu-item StLabel {
+  padding: 0 11px;
+  width: 6.5em;
+}
+
+.workspace-indicator-menu .editable-menu-item StEntry {
+  padding: 9px 9px;
+  width: 6.5em;
+}
+
+/* Compact hover label, matching the Now Playing tooltip. */
+.workspace-indicator-tooltip {
+  padding: 4px 9px;
+  border-radius: 7px;
+  background-color: rgba(30, 30, 30, 0.95);
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: bold;
+}
