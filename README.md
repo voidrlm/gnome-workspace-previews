@@ -2,6 +2,8 @@
 
 A restyled version of GNOME's Workspace Indicator extension that shows workspace previews in the top bar. Based on [gnome-shell-extensions](https://gitlab.gnome.org/GNOME/gnome-shell-extensions), licensed under GPL-2.0 (see COPYING).
 
+![Workspace previews in the top bar](screenshots/pill.png)
+
 If the stock Workspace Indicator is installed system-wide, this copy in your home folder takes priority.
 
 Requires GNOME Shell 50.
